@@ -12,4 +12,10 @@
     <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsUpdateWebhookAPIInSequence" methods="POST" url-mapping="/claims/update/webhook">
         <outSequence/>
     </resource>
+    <resource faultSequence="ClaimsEventsClaimIdAPIFaultSequence" inSequence="ClaimsEventsClaimIdAPIInSequence" methods="GET" uri-template="/claims/events/{claimId}">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="ClaimsEventsAPIFaultSequence" inSequence="ClaimsEventsAPIInSequence" methods="POST" uri-template="/claims/events">
+        <outSequence/>
+    </resource>
 </api>

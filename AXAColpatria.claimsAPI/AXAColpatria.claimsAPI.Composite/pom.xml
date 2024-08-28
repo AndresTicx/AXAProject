@@ -17,14 +17,20 @@
     <com.axa.metadata_._claimsAPI_metadata>capp/EnterpriseServiceBus</com.axa.metadata_._claimsAPI_metadata>
     <com.axa.endpoint_._ClaimsAPIEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ClaimsAPIEndpoint>
     <com.axa.sequence_._VehicleClaimsAPIInSequence>capp/EnterpriseServiceBus</com.axa.sequence_._VehicleClaimsAPIInSequence>
+    <com.axa.sequence_._ClaimsEventsAPIFaultSequence>capp/EnterpriseServiceBus</com.axa.sequence_._ClaimsEventsAPIFaultSequence>
     <com.axa.endpoint_._ClaimsCreateAPIEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ClaimsCreateAPIEndpoint>
     <com.axa.endpoint_._VehicleClaimsAPIEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._VehicleClaimsAPIEndpoint>
     <com.axa.sequence_._ClaimsCreateAPIInSequence>capp/EnterpriseServiceBus</com.axa.sequence_._ClaimsCreateAPIInSequence>
     <com.axa.metadata_._claimsAPI_swagger>capp/EnterpriseServiceBus</com.axa.metadata_._claimsAPI_swagger>
+    <com.axa.sequence_._ClaimsEventsClaimIdAPIInSequence>capp/EnterpriseServiceBus</com.axa.sequence_._ClaimsEventsClaimIdAPIInSequence>
+    <com.axa.endpoint_._ClaimsEventsClaimIdAPIEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ClaimsEventsClaimIdAPIEndpoint>
     <com.axa.endpoint_._ClaimsUpdateWebhookAPIEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ClaimsUpdateWebhookAPIEndpoint>
     <com.axa.sequence_._claimsAPIFaultSequence>capp/EnterpriseServiceBus</com.axa.sequence_._claimsAPIFaultSequence>
+    <com.axa.sequence_._ClaimsEventsClaimIdAPIFaultSequence>capp/EnterpriseServiceBus</com.axa.sequence_._ClaimsEventsClaimIdAPIFaultSequence>
     <com.axa.sequence_._ClaimsUpdateWebhookAPIInSequence>capp/EnterpriseServiceBus</com.axa.sequence_._ClaimsUpdateWebhookAPIInSequence>
     <com.axa.sequence_._ClaimsAPIInSequence>capp/EnterpriseServiceBus</com.axa.sequence_._ClaimsAPIInSequence>
+    <com.axa.endpoint_._ClaimsEventsAPIEndpoint>capp/EnterpriseServiceBus</com.axa.endpoint_._ClaimsEventsAPIEndpoint>
+    <com.axa.sequence_._ClaimsEventsAPIInSequence>capp/EnterpriseServiceBus</com.axa.sequence_._ClaimsEventsAPIInSequence>
     <com.axa.api_._claimsAPI>capp/EnterpriseServiceBus</com.axa.api_._claimsAPI>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
@@ -61,6 +67,18 @@
     </dependency>
     <dependency>
       <groupId>com.axa.endpoint</groupId>
+      <artifactId>ClaimsEventsAPIEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
+      <artifactId>ClaimsEventsClaimIdAPIEndpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.endpoint</groupId>
       <artifactId>ClaimsUpdateWebhookAPIEndpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
@@ -80,6 +98,30 @@
     <dependency>
       <groupId>com.axa.sequence</groupId>
       <artifactId>ClaimsCreateAPIInSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ClaimsEventsAPIFaultSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ClaimsEventsAPIInSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ClaimsEventsClaimIdAPIFaultSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.axa.sequence</groupId>
+      <artifactId>ClaimsEventsClaimIdAPIInSequence</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
