@@ -53,4 +53,13 @@
     <artifact name="ClaimsEventsAPIFaultSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/ClaimsEventsAPIFaultSequence.xml</file>
     </artifact>
+    <artifact name="ClaimsNotificationInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsNotificationInSeq.xml</file>
+    </artifact>
+    <artifact name="ClaimsPagInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsPagInSeq.xml</file>
+    </artifact>
+    <artifact name="ClaimsPagPatchInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsPagPatchInSeq.xml</file>
+    </artifact>
 </artifacts>
