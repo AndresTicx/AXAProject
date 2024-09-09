@@ -1,0 +1,63 @@
+openapi: 3.0.1
+info:
+  title: claimsAPI
+  description: API Definition of claimsAPI
+  version: 1.0.0
+servers:
+- url: @Metadata/customerManagement/claimsAPI/v1
+paths:
+  /claims/{claimNumber}/{documentType}/{documentNumber}:
+    get:
+      parameters:
+      - name: claimNumber
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: documentType
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: documentNumber
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: Default response
+  /vehicle/claims/{plate}:
+    get:
+      parameters:
+      - name: plate
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: Default response
+  /claims/create:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response

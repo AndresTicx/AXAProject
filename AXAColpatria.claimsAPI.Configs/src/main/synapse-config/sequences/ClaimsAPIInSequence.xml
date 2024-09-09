@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="ClaimsAPIInSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log/>
+    <propertyGroup description="Grupo de propiedades que tiene los valres de los pathParams de la peticion">
+        <property expression="get-property('uri.var.claimNumber')" name="uri.var.claimNumber" scope="default" type="STRING"/>
+        <property expression="get-property('uri.var.documentType')" name="uri.var.documentType" scope="default" type="STRING"/>
+        <property expression="get-property('uri.var.documentNumber')" name="uri.var.documentNumber" scope="default" type="STRING"/>
+    </propertyGroup>
+    <call>
+        <endpoint key="ClaimsAPIEndpoint"/>
+    </call>
+    <log/>
+    <respond/>
+</sequence>

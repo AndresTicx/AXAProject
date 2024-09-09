@@ -1,0 +1,2153 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "inputType" : "JSON",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "Contrato" : {
+      "id" : "http://wso2jsonschema.org/Contrato",
+      "type" : "object",
+      "properties" : {
+        "idContrato" : {
+          "id" : "http://wso2jsonschema.org/Contrato/idContrato",
+          "type" : "string"
+        },
+        "idContratoPublico" : {
+          "id" : "http://wso2jsonschema.org/Contrato/idContratoPublico",
+          "type" : "string"
+        },
+        "descripcionRiesgo" : {
+          "id" : "http://wso2jsonschema.org/Contrato/descripcionRiesgo",
+          "type" : "string"
+        },
+        "fechaCancelacion" : {
+          "id" : "http://wso2jsonschema.org/Contrato/fechaCancelacion",
+          "type" : "string"
+        },
+        "fechaCreacion" : {
+          "id" : "http://wso2jsonschema.org/Contrato/fechaCreacion",
+          "type" : "string"
+        },
+        "fechaRehabilitacion" : {
+          "id" : "http://wso2jsonschema.org/Contrato/fechaRehabilitacion",
+          "type" : "string"
+        },
+        "subProducto" : {
+          "id" : "http://wso2jsonschema.org/Contrato/subProducto",
+          "type" : "object",
+          "properties" : {
+            "nombreSubProducto" : {
+              "id" : "http://wso2jsonschema.org/Contrato/subProducto/nombreSubProducto",
+              "type" : "string"
+            },
+            "producto" : {
+              "id" : "http://wso2jsonschema.org/Contrato/subProducto/producto",
+              "type" : "object",
+              "properties" : {
+                "nombreProducto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/subProducto/producto/nombreProducto",
+                  "type" : "string"
+                },
+                "identificacionProducto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/subProducto/producto/identificacionProducto",
+                  "type" : "object",
+                  "properties" : {
+                    "idProducto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/subProducto/producto/identificacionProducto/idProducto",
+                      "type" : "string"
+                    },
+                    "idProductoPublico" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/subProducto/producto/identificacionProducto/idProductoPublico",
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            },
+            "identificacionSubProducto" : {
+              "id" : "http://wso2jsonschema.org/Contrato/subProducto/identificacionSubProducto",
+              "type" : "object",
+              "properties" : {
+                "idSubProducto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/subProducto/identificacionSubProducto/idSubProducto",
+                  "type" : "string"
+                },
+                "idSubProductoPublico" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/subProducto/identificacionSubProducto/idSubProductoPublico",
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "ultimaAccion" : {
+          "id" : "http://wso2jsonschema.org/Contrato/ultimaAccion",
+          "type" : "string"
+        },
+        "vigenciaContrato" : {
+          "id" : "http://wso2jsonschema.org/Contrato/vigenciaContrato",
+          "type" : "object",
+          "properties" : {
+            "fechaEstimadaInicio" : {
+              "id" : "http://wso2jsonschema.org/Contrato/vigenciaContrato/fechaEstimadaInicio",
+              "type" : "string"
+            },
+            "fechaFinal" : {
+              "id" : "http://wso2jsonschema.org/Contrato/vigenciaContrato/fechaFinal",
+              "type" : "string"
+            },
+            "fechaInicio" : {
+              "id" : "http://wso2jsonschema.org/Contrato/vigenciaContrato/fechaInicio",
+              "type" : "string"
+            },
+            "fechaCreacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/vigenciaContrato/fechaCreacion",
+              "type" : "string"
+            },
+            "fechaRehabilitacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/vigenciaContrato/fechaRehabilitacion",
+              "type" : "string"
+            }
+          }
+        },
+        "idSucursal" : {
+          "id" : "http://wso2jsonschema.org/Contrato/idSucursal",
+          "type" : "string"
+        },
+        "siniestro" : {
+          "id" : "http://wso2jsonschema.org/Contrato/siniestro",
+          "type" : "object",
+          "properties" : {
+            "idSiniestro" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/idSiniestro",
+              "type" : "string"
+            },
+            "idSiniestroPublico" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/idSiniestroPublico",
+              "type" : "string"
+            },
+            "descripcion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/descripcion",
+              "type" : "string"
+            },
+            "fechaAviso" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaAviso",
+              "type" : "string"
+            },
+            "fechaCierre" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaCierre",
+              "type" : "string"
+            },
+            "fechaCreacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaCreacion",
+              "type" : "string"
+            },
+            "fechaEstado" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaEstado",
+              "type" : "string"
+            },
+            "fechaPerdidaSiniestro" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaPerdidaSiniestro",
+              "type" : "string"
+            },
+            "tipoSiniestro" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/tipoSiniestro",
+              "type" : "string"
+            },
+            "ubicacionSiniestro" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro",
+              "type" : "object",
+              "properties" : {
+                "barrio" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/barrio",
+                  "type" : "string"
+                },
+                "calle" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/calle",
+                  "type" : "string"
+                },
+                "carrera" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/carrera",
+                  "type" : "string"
+                },
+                "casaNr" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/casaNr",
+                  "type" : "string"
+                },
+                "construccionNr" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/construccionNr",
+                  "type" : "string"
+                },
+                "interior" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/interior",
+                  "type" : "string"
+                },
+                "lineaDireccion1" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/lineaDireccion1",
+                  "type" : "string"
+                },
+                "lineaDireccion2" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/lineaDireccion2",
+                  "type" : "string"
+                },
+                "localidad" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/localidad",
+                  "type" : "string"
+                },
+                "ciudad" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad",
+                  "type" : "object",
+                  "properties" : {
+                    "codigo" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/codigo",
+                      "type" : "string"
+                    },
+                    "nombre" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/nombre",
+                      "type" : "string"
+                    },
+                    "departamento" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/departamento",
+                      "type" : "object",
+                      "properties" : {
+                        "codigo" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/departamento/codigo",
+                          "type" : "string"
+                        },
+                        "nombre" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/departamento/nombre",
+                          "type" : "string"
+                        },
+                        "pais" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/departamento/pais",
+                          "type" : "object",
+                          "properties" : {
+                            "codigo" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/departamento/pais/codigo",
+                              "type" : "string"
+                            },
+                            "nombre" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/ciudad/departamento/pais/nombre",
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "geolocalizacion" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/geolocalizacion",
+                  "type" : "object",
+                  "properties" : {
+                    "latitud" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/geolocalizacion/latitud",
+                      "type" : "string"
+                    },
+                    "longitud" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/geolocalizacion/longitud",
+                      "type" : "string"
+                    },
+                    "tipoLocalizacion" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/ubicacionSiniestro/geolocalizacion/tipoLocalizacion",
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            },
+            "estadoSiniestro" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/estadoSiniestro",
+              "type" : "object",
+              "properties" : {
+                "descripcionEstado" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/estadoSiniestro/descripcionEstado",
+                  "type" : "string"
+                },
+                "idEstado" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/estadoSiniestro/idEstado",
+                  "type" : "string"
+                }
+              }
+            },
+            "involucrado" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado",
+              "type" : "object",
+              "properties" : {
+                "involucrado" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado",
+                  "type" : "object",
+                  "properties" : {
+                    "contactoPrincipal" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal",
+                      "type" : "object",
+                      "properties" : {
+                        "telefonoLaboral" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoLaboral",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoLaboral/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoLaboral/esPreferido",
+                              "type" : "string"
+                            },
+                            "indicador" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoLaboral/indicador",
+                              "type" : "string"
+                            },
+                            "numero" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoLaboral/numero",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "telefonoPersonal" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoPersonal",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoPersonal/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoPersonal/esPreferido",
+                              "type" : "string"
+                            },
+                            "indicador" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoPersonal/indicador",
+                              "type" : "string"
+                            },
+                            "numero" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/telefonoPersonal/numero",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "celularPersonal" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularPersonal",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularPersonal/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularPersonal/esPreferido",
+                              "type" : "string"
+                            },
+                            "indicador" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularPersonal/indicador",
+                              "type" : "string"
+                            },
+                            "numero" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularPersonal/numero",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "celularLaboral" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularLaboral",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularLaboral/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularLaboral/esPreferido",
+                              "type" : "string"
+                            },
+                            "indicador" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularLaboral/indicador",
+                              "type" : "string"
+                            },
+                            "numero" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/celularLaboral/numero",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "fax" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/fax",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/fax/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/fax/esPreferido",
+                              "type" : "string"
+                            },
+                            "indicador" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/fax/indicador",
+                              "type" : "string"
+                            },
+                            "numero" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/fax/numero",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "email" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/email",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/email/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/email/esPreferido",
+                              "type" : "string"
+                            },
+                            "email" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/email/email",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "web" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/web",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/web/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/web/esPreferido",
+                              "type" : "string"
+                            },
+                            "web" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/web/web",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "socialMedia" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/socialMedia",
+                          "type" : "object",
+                          "properties" : {
+                            "esAutorizado" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/socialMedia/esAutorizado",
+                              "type" : "string"
+                            },
+                            "esPreferido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/socialMedia/esPreferido",
+                              "type" : "string"
+                            },
+                            "nombreUsuario" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/socialMedia/nombreUsuario",
+                              "type" : "string"
+                            },
+                            "redSocial" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/contactoPrincipal/socialMedia/redSocial",
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "direccionPrincipal" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal",
+                      "type" : "object",
+                      "properties" : {
+                        "barrio" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/barrio",
+                          "type" : "string"
+                        },
+                        "calle" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/calle",
+                          "type" : "string"
+                        },
+                        "carrera" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/carrera",
+                          "type" : "string"
+                        },
+                        "casaNr" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/casaNr",
+                          "type" : "string"
+                        },
+                        "construccionNr" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/construccionNr",
+                          "type" : "string"
+                        },
+                        "interior" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/interior",
+                          "type" : "string"
+                        },
+                        "lineaDireccion1" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/lineaDireccion1",
+                          "type" : "string"
+                        },
+                        "lineaDireccion2" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/lineaDireccion2",
+                          "type" : "string"
+                        },
+                        "localidad" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/localidad",
+                          "type" : "string"
+                        },
+                        "ciudad" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad",
+                          "type" : "object",
+                          "properties" : {
+                            "codigo" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/codigo",
+                              "type" : "string"
+                            },
+                            "nombre" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/nombre",
+                              "type" : "string"
+                            },
+                            "departamento" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/departamento",
+                              "type" : "object",
+                              "properties" : {
+                                "codigo" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/departamento/codigo",
+                                  "type" : "string"
+                                },
+                                "nombre" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/departamento/nombre",
+                                  "type" : "string"
+                                },
+                                "pais" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/departamento/pais",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "codigo" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/departamento/pais/codigo",
+                                      "type" : "string"
+                                    },
+                                    "nombre" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/ciudad/departamento/pais/nombre",
+                                      "type" : "string"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "geolocalizacion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/geolocalizacion",
+                          "type" : "object",
+                          "properties" : {
+                            "latitud" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/geolocalizacion/latitud",
+                              "type" : "string"
+                            },
+                            "longitud" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/geolocalizacion/longitud",
+                              "type" : "string"
+                            },
+                            "tipoLocalizacion" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/direccionPrincipal/geolocalizacion/tipoLocalizacion",
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "empresa" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa",
+                      "type" : "object",
+                      "properties" : {
+                        "personaId" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/personaId",
+                          "type" : "string"
+                        },
+                        "identificacion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/identificacion",
+                          "type" : "object",
+                          "properties" : {
+                            "identificacion" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/identificacion/identificacion",
+                              "type" : "string"
+                            },
+                            "tipoIdentificacion" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/identificacion/tipoIdentificacion",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "accionista" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/accionista",
+                          "type" : "object",
+                          "properties" : {
+                            "personaId" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/accionista/personaId",
+                              "type" : "string"
+                            },
+                            "identificacion" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/accionista/identificacion",
+                              "type" : "object",
+                              "properties" : {
+                                "identificacion" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/accionista/identificacion/identificacion",
+                                  "type" : "string"
+                                },
+                                "tipoIdentificacion" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/accionista/identificacion/tipoIdentificacion",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "actividadEconomica" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/actividadEconomica",
+                          "type" : "string"
+                        },
+                        "costos" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/costos",
+                          "type" : "string"
+                        },
+                        "digitoVerificacion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/digitoVerificacion",
+                          "type" : "string"
+                        },
+                        "fechaConstitucion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/fechaConstitucion",
+                          "type" : "string"
+                        },
+                        "fechaDisolucion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/fechaDisolucion",
+                          "type" : "string"
+                        },
+                        "ingresos" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/ingresos",
+                          "type" : "string"
+                        },
+                        "personaContacto" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/personaContacto",
+                          "type" : "object",
+                          "properties" : {
+                            "personaId" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/personaContacto/personaId",
+                              "type" : "string"
+                            },
+                            "identificacion" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/personaContacto/identificacion",
+                              "type" : "object",
+                              "properties" : {
+                                "identificacion" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/personaContacto/identificacion/identificacion",
+                                  "type" : "string"
+                                },
+                                "tipoIdentificacion" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/personaContacto/identificacion/tipoIdentificacion",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "representanteLegal" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal",
+                          "type" : "object",
+                          "properties" : {
+                            "Respresentante" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante",
+                              "type" : "object",
+                              "properties" : {
+                                "contactoPrincipal" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "telefonoLaboral" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoLaboral",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoLaboral/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoLaboral/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "indicador" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoLaboral/indicador",
+                                          "type" : "string"
+                                        },
+                                        "numero" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoLaboral/numero",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "telefonoPersonal" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoPersonal",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoPersonal/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoPersonal/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "indicador" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoPersonal/indicador",
+                                          "type" : "string"
+                                        },
+                                        "numero" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/telefonoPersonal/numero",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "celularPersonal" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularPersonal",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularPersonal/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularPersonal/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "indicador" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularPersonal/indicador",
+                                          "type" : "string"
+                                        },
+                                        "numero" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularPersonal/numero",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "celularLaboral" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularLaboral",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularLaboral/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularLaboral/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "indicador" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularLaboral/indicador",
+                                          "type" : "string"
+                                        },
+                                        "numero" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/celularLaboral/numero",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "fax" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/fax",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/fax/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/fax/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "indicador" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/fax/indicador",
+                                          "type" : "string"
+                                        },
+                                        "numero" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/fax/numero",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "email" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/email",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/email/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/email/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "email" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/email/email",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "web" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/web",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/web/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/web/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "web" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/web/web",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "socialMedia" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/socialMedia",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "esAutorizado" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/socialMedia/esAutorizado",
+                                          "type" : "string"
+                                        },
+                                        "esPreferido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/socialMedia/esPreferido",
+                                          "type" : "string"
+                                        },
+                                        "nombreUsuario" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/socialMedia/nombreUsuario",
+                                          "type" : "string"
+                                        },
+                                        "redSocial" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/contactoPrincipal/socialMedia/redSocial",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "direccionPrincipal" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "barrio" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/barrio",
+                                      "type" : "string"
+                                    },
+                                    "calle" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/calle",
+                                      "type" : "string"
+                                    },
+                                    "carrera" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/carrera",
+                                      "type" : "string"
+                                    },
+                                    "casaNr" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/casaNr",
+                                      "type" : "string"
+                                    },
+                                    "construccionNr" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/construccionNr",
+                                      "type" : "string"
+                                    },
+                                    "interior" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/interior",
+                                      "type" : "string"
+                                    },
+                                    "lineaDireccion1" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/lineaDireccion1",
+                                      "type" : "string"
+                                    },
+                                    "lineaDireccion2" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/lineaDireccion2",
+                                      "type" : "string"
+                                    },
+                                    "localidad" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/localidad",
+                                      "type" : "string"
+                                    },
+                                    "ciudad" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "codigo" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/codigo",
+                                          "type" : "string"
+                                        },
+                                        "nombre" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/nombre",
+                                          "type" : "string"
+                                        },
+                                        "departamento" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/departamento",
+                                          "type" : "object",
+                                          "properties" : {
+                                            "codigo" : {
+                                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/departamento/codigo",
+                                              "type" : "string"
+                                            },
+                                            "nombre" : {
+                                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/departamento/nombre",
+                                              "type" : "string"
+                                            },
+                                            "pais" : {
+                                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/departamento/pais",
+                                              "type" : "object",
+                                              "properties" : {
+                                                "codigo" : {
+                                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/departamento/pais/codigo",
+                                                  "type" : "string"
+                                                },
+                                                "nombre" : {
+                                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/ciudad/departamento/pais/nombre",
+                                                  "type" : "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "geolocalizacion" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/geolocalizacion",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "latitud" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/geolocalizacion/latitud",
+                                          "type" : "string"
+                                        },
+                                        "longitud" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/geolocalizacion/longitud",
+                                          "type" : "string"
+                                        },
+                                        "tipoLocalizacion" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/direccionPrincipal/geolocalizacion/tipoLocalizacion",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "empresa" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/empresa",
+                                  "type" : "string"
+                                },
+                                "persona" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "personaId" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/personaId",
+                                      "type" : "string"
+                                    },
+                                    "identificacion" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/identificacion",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "identificacion" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/identificacion/identificacion",
+                                          "type" : "string"
+                                        },
+                                        "tipoIdentificacion" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/identificacion/tipoIdentificacion",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "cantidadHijos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/cantidadHijos",
+                                      "type" : "string"
+                                    },
+                                    "eps" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/eps",
+                                      "type" : "string"
+                                    },
+                                    "esAutoEmpleado" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/esAutoEmpleado",
+                                      "type" : "string"
+                                    },
+                                    "estadoCivil" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/estadoCivil",
+                                      "type" : "string"
+                                    },
+                                    "estrato" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/estrato",
+                                      "type" : "string"
+                                    },
+                                    "fechaExpedicionDocumento" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/fechaExpedicionDocumento",
+                                      "type" : "string"
+                                    },
+                                    "fechaNacimiento" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/fechaNacimiento",
+                                      "type" : "string"
+                                    },
+                                    "genero" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/genero",
+                                      "type" : "string"
+                                    },
+                                    "idioma" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/idioma",
+                                      "type" : "string"
+                                    },
+                                    "ingresosAnuales" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/ingresosAnuales",
+                                      "type" : "string"
+                                    },
+                                    "nacionalidad" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/nacionalidad",
+                                      "type" : "string"
+                                    },
+                                    "nivelEstudio" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/nivelEstudio",
+                                      "type" : "string"
+                                    },
+                                    "profesion" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/profesion",
+                                      "type" : "string"
+                                    },
+                                    "tipoVivienda" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/tipoVivienda",
+                                      "type" : "string"
+                                    },
+                                    "datosBasicos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/datosBasicos",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "nombreCompleto" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/datosBasicos/nombreCompleto",
+                                          "type" : "string"
+                                        },
+                                        "primerApellido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/datosBasicos/primerApellido",
+                                          "type" : "string"
+                                        },
+                                        "primerNombre" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/datosBasicos/primerNombre",
+                                          "type" : "string"
+                                        },
+                                        "segundoApellido" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/datosBasicos/segundoApellido",
+                                          "type" : "string"
+                                        },
+                                        "segundoNombre" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/datosBasicos/segundoNombre",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "edad" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/edad",
+                                      "type" : "string"
+                                    },
+                                    "relacion" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/persona/relacion",
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "ocupacion" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/ocupacion",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "nombreEmpresa" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/ocupacion/nombreEmpresa",
+                                      "type" : "string"
+                                    },
+                                    "ocupacionDescripcion" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/ocupacion/ocupacionDescripcion",
+                                      "type" : "string"
+                                    },
+                                    "ocupacionId" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/ocupacion/ocupacionId",
+                                      "type" : "string"
+                                    },
+                                    "salario" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/ocupacion/salario",
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "educacion" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/educacion",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "nivelEducacion" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/educacion/nivelEducacion",
+                                      "type" : "string"
+                                    },
+                                    "nivelEducacionId" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/educacion/nivelEducacionId",
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "informacionFinanciera" : {
+                                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "actividadesMonedaExxtranjera" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/actividadesMonedaExxtranjera",
+                                      "type" : "string"
+                                    },
+                                    "activos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/activos",
+                                      "type" : "string"
+                                    },
+                                    "administraRecursosPublicos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/administraRecursosPublicos",
+                                      "type" : "string"
+                                    },
+                                    "cuentasMonedaExtranjera" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/cuentasMonedaExtranjera",
+                                      "type" : "string"
+                                    },
+                                    "declaracionTributariaOtrosPaises" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/declaracionTributariaOtrosPaises",
+                                      "type" : "string"
+                                    },
+                                    "egresos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/egresos",
+                                      "type" : "string"
+                                    },
+                                    "ejerceCargoPoderPublico" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/ejerceCargoPoderPublico",
+                                      "type" : "string"
+                                    },
+                                    "ingresos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/ingresos",
+                                      "type" : "string"
+                                    },
+                                    "otrosIngresos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/otrosIngresos",
+                                      "type" : "string"
+                                    },
+                                    "pasivos" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/pasivos",
+                                      "type" : "string"
+                                    },
+                                    "productosFinancierosExterior" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExterior",
+                                      "type" : "string"
+                                    },
+                                    "reconocimientoPublico" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/reconocimientoPublico",
+                                      "type" : "string"
+                                    },
+                                    "operacionesInternacionales" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/operacionesInternacionales",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "codigo" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/operacionesInternacionales/codigo",
+                                          "type" : "string"
+                                        },
+                                        "Nombre" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/operacionesInternacionales/Nombre",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "productosFinancierosExtranjero" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "entidadBancaria" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/entidadBancaria",
+                                          "type" : "string"
+                                        },
+                                        "moneda" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/moneda",
+                                          "type" : "string"
+                                        },
+                                        "montoProducto" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/montoProducto",
+                                          "type" : "string"
+                                        },
+                                        "NumeroProducto" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/NumeroProducto",
+                                          "type" : "string"
+                                        },
+                                        "paisProducto" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/paisProducto",
+                                          "type" : "object",
+                                          "properties" : {
+                                            "codigo" : {
+                                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/paisProducto/codigo",
+                                              "type" : "string"
+                                            },
+                                            "nombre" : {
+                                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/paisProducto/nombre",
+                                              "type" : "string"
+                                            }
+                                          }
+                                        },
+                                        "tipoProducto" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/productosFinancierosExtranjero/tipoProducto",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "actividadEconomica" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/actividadEconomica",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "codigo" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/actividadEconomica/codigo",
+                                          "type" : "string"
+                                        },
+                                        "descripcion" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/actividadEconomica/descripcion",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    },
+                                    "puntajeCrediticio" : {
+                                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/puntajeCrediticio",
+                                      "type" : "object",
+                                      "properties" : {
+                                        "tipo" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/puntajeCrediticio/tipo",
+                                          "type" : "string"
+                                        },
+                                        "puntaje" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/puntajeCrediticio/puntaje",
+                                          "type" : "string"
+                                        },
+                                        "clasificacion" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/puntajeCrediticio/clasificacion",
+                                          "type" : "string"
+                                        },
+                                        "razones" : {
+                                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/representanteLegal/Respresentante/informacionFinanciera/puntajeCrediticio/razones",
+                                          "type" : "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "tipoEmpresa" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/tipoEmpresa",
+                          "type" : "string"
+                        },
+                        "totalEmpleados" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/totalEmpleados",
+                          "type" : "string"
+                        },
+                        "datosBasicos" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/datosBasicos",
+                          "type" : "object",
+                          "properties" : {
+                            "nombreComercial" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/datosBasicos/nombreComercial",
+                              "type" : "string"
+                            },
+                            "razonSocial" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/datosBasicos/razonSocial",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "ValorNomina" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/ValorNomina",
+                          "type" : "string"
+                        },
+                        "SectorEmpresarial" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/empresa/SectorEmpresarial",
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "persona" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona",
+                      "type" : "object",
+                      "properties" : {
+                        "personaId" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/personaId",
+                          "type" : "string"
+                        },
+                        "identificacion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/identificacion",
+                          "type" : "object",
+                          "properties" : {
+                            "identificacion" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/identificacion/identificacion",
+                              "type" : "string"
+                            },
+                            "tipoIdentificacion" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/identificacion/tipoIdentificacion",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "cantidadHijos" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/cantidadHijos",
+                          "type" : "string"
+                        },
+                        "eps" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/eps",
+                          "type" : "string"
+                        },
+                        "esAutoEmpleado" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/esAutoEmpleado",
+                          "type" : "string"
+                        },
+                        "estadoCivil" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/estadoCivil",
+                          "type" : "string"
+                        },
+                        "estrato" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/estrato",
+                          "type" : "string"
+                        },
+                        "fechaExpedicionDocumento" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/fechaExpedicionDocumento",
+                          "type" : "string"
+                        },
+                        "fechaNacimiento" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/fechaNacimiento",
+                          "type" : "string"
+                        },
+                        "genero" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/genero",
+                          "type" : "string"
+                        },
+                        "idioma" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/idioma",
+                          "type" : "string"
+                        },
+                        "ingresosAnuales" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/ingresosAnuales",
+                          "type" : "string"
+                        },
+                        "nacionalidad" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/nacionalidad",
+                          "type" : "string"
+                        },
+                        "nivelEstudio" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/nivelEstudio",
+                          "type" : "string"
+                        },
+                        "profesion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/profesion",
+                          "type" : "string"
+                        },
+                        "tipoVivienda" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/tipoVivienda",
+                          "type" : "string"
+                        },
+                        "datosBasicos" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/datosBasicos",
+                          "type" : "object",
+                          "properties" : {
+                            "nombreCompleto" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/datosBasicos/nombreCompleto",
+                              "type" : "string"
+                            },
+                            "primerApellido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/datosBasicos/primerApellido",
+                              "type" : "string"
+                            },
+                            "primerNombre" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/datosBasicos/primerNombre",
+                              "type" : "string"
+                            },
+                            "segundoApellido" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/datosBasicos/segundoApellido",
+                              "type" : "string"
+                            },
+                            "segundoNombre" : {
+                              "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/datosBasicos/segundoNombre",
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "edad" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/edad",
+                          "type" : "string"
+                        },
+                        "relacion" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/involucrado/persona/relacion",
+                          "type" : "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "rolInvolucradoSiniestro" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/involucrado/rolInvolucradoSiniestro",
+                  "type" : "string"
+                }
+              }
+            },
+            "fechaSiniestro" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaSiniestro",
+              "type" : "string"
+            },
+            "idProceso" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/idProceso",
+              "type" : "string"
+            },
+            "fechaFormalizacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaFormalizacion",
+              "type" : "string"
+            },
+            "fechaHoraReclamo" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaHoraReclamo",
+              "type" : "string"
+            },
+            "fechaEntradaIPS" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaEntradaIPS",
+              "type" : "string"
+            },
+            "fechaSalidaIPS" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaSalidaIPS",
+              "type" : "string"
+            },
+            "anio" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/anio",
+              "type" : "string"
+            },
+            "monto" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/monto",
+              "type" : "object",
+              "properties" : {
+                "moneda" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/monto/moneda",
+                  "type" : "string"
+                },
+                "monto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/monto/monto",
+                  "type" : "string"
+                },
+                "montoLetras" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/monto/montoLetras",
+                  "type" : "string"
+                },
+                "limite" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/monto/limite",
+                  "type" : "string"
+                }
+              }
+            },
+            "moneda" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/moneda",
+              "type" : "string"
+            },
+            "idSucursal" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/idSucursal",
+              "type" : "string"
+            },
+            "numeroCuenta" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/numeroCuenta",
+              "type" : "string"
+            },
+            "fechaMuerte" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaMuerte",
+              "type" : "string"
+            },
+            "estaAsegurada" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/estaAsegurada",
+              "type" : "string"
+            },
+            "perdidaTotal" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/perdidaTotal",
+              "type" : "string"
+            },
+            "descripcionExtendida" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/descripcionExtendida",
+              "type" : "string"
+            },
+            "idTaller" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/idTaller",
+              "type" : "string"
+            },
+            "numeroOrden" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/numeroOrden",
+              "type" : "string"
+            },
+            "numeroTelefono" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/numeroTelefono",
+              "type" : "string"
+            },
+            "unionVehiculoTaller" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/unionVehiculoTaller",
+              "type" : "string"
+            },
+            "inspeccion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/inspeccion",
+              "type" : "string"
+            },
+            "asignacionInspeccion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/asignacionInspeccion",
+              "type" : "string"
+            },
+            "ordenReparacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/ordenReparacion",
+              "type" : "string"
+            },
+            "tipoReparacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/tipoReparacion",
+              "type" : "string"
+            },
+            "entregaVehiculo" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/entregaVehiculo",
+              "type" : "string"
+            },
+            "diasReparacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/diasReparacion",
+              "type" : "string"
+            },
+            "objecion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/objecion",
+              "type" : "string"
+            },
+            "fecha" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fecha",
+              "type" : "string"
+            },
+            "fechaRealEntrega" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/fechaRealEntrega",
+              "type" : "string"
+            },
+            "observacionesInspeccion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/observacionesInspeccion",
+              "type" : "string"
+            },
+            "direccionRiesgo" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/direccionRiesgo",
+              "type" : "string"
+            },
+            "interTermiPt" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/interTermiPt",
+              "type" : "string"
+            },
+            "cartaOfrecimiento" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/cartaOfrecimiento",
+              "type" : "string"
+            },
+            "obsReprogramacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/obsReprogramacion",
+              "type" : "string"
+            },
+            "coberturaAfectada" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada",
+              "type" : "object",
+              "properties" : {
+                "descripcion" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/descripcion",
+                  "type" : "string"
+                },
+                "idCobertura" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/idCobertura",
+                  "type" : "string"
+                },
+                "tipoCobertura" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/tipoCobertura",
+                  "type" : "string"
+                },
+                "limite" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/limite",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/limite/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/limite/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/limite/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/limite/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "deducible" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/deducible",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/deducible/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/deducible/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/deducible/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/deducible/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "sumaAsegurada" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/sumaAsegurada",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/sumaAsegurada/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/sumaAsegurada/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/sumaAsegurada/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/sumaAsegurada/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "gastosDiarios" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/gastosDiarios",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/gastosDiarios/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/gastosDiarios/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/gastosDiarios/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/gastosDiarios/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "cantidadGastosDiarios" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/cantidadGastosDiarios",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/cantidadGastosDiarios/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/cantidadGastosDiarios/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/cantidadGastosDiarios/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/cantidadGastosDiarios/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "asistenciaLegal" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/asistenciaLegal",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/asistenciaLegal/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/asistenciaLegal/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/asistenciaLegal/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/asistenciaLegal/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "rc1" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc1",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc1/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc1/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc1/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc1/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "rc2" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc2",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc2/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc2/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc2/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc2/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "rc3" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc3",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc3/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc3/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc3/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/rc3/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "descripcionRiesgo" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/coberturaAfectada/descripcionRiesgo",
+                  "type" : "string"
+                }
+              }
+            },
+            "estimacion" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion",
+              "type" : "object",
+              "properties" : {
+                "codEstimacion" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/codEstimacion",
+                  "type" : "string"
+                },
+                "fechaEstimacion" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/fechaEstimacion",
+                  "type" : "string"
+                },
+                "codTipoEstimacion" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/codTipoEstimacion",
+                  "type" : "string"
+                },
+                "codSubEstimacion" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/codSubEstimacion",
+                  "type" : "string"
+                },
+                "valorEstimacion" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/valorEstimacion",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/valorEstimacion/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/valorEstimacion/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/valorEstimacion/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/estimacion/valorEstimacion/limite",
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            },
+            "reserva" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva",
+              "type" : "object",
+              "properties" : {
+                "codTipoReserva" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/codTipoReserva",
+                  "type" : "string"
+                },
+                "codSubTipoReserva" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/codSubTipoReserva",
+                  "type" : "string"
+                },
+                "porcentajeReserva" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/porcentajeReserva",
+                  "type" : "string"
+                },
+                "valorReserva" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/valorReserva",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/valorReserva/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/valorReserva/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/valorReserva/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/reserva/valorReserva/limite",
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            },
+            "valorPretension" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorPretension",
+              "type" : "object",
+              "properties" : {
+                "moneda" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorPretension/moneda",
+                  "type" : "string"
+                },
+                "monto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorPretension/monto",
+                  "type" : "string"
+                },
+                "montoLetras" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorPretension/montoLetras",
+                  "type" : "string"
+                },
+                "limite" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorPretension/limite",
+                  "type" : "string"
+                }
+              }
+            },
+            "valorManoObra" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorManoObra",
+              "type" : "object",
+              "properties" : {
+                "moneda" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorManoObra/moneda",
+                  "type" : "string"
+                },
+                "monto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorManoObra/monto",
+                  "type" : "string"
+                },
+                "montoLetras" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorManoObra/montoLetras",
+                  "type" : "string"
+                },
+                "limite" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/valorManoObra/limite",
+                  "type" : "string"
+                }
+              }
+            },
+            "voucher" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher",
+              "type" : "object",
+              "properties" : {
+                "tipoVoucher" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/tipoVoucher",
+                  "type" : "string"
+                },
+                "fechaVoucher" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/fechaVoucher",
+                  "type" : "string"
+                },
+                "totalVoucher" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalVoucher",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalVoucher/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalVoucher/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalVoucher/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalVoucher/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "totalImpuestoVoucher" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalImpuestoVoucher",
+                  "type" : "object",
+                  "properties" : {
+                    "moneda" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalImpuestoVoucher/moneda",
+                      "type" : "string"
+                    },
+                    "monto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalImpuestoVoucher/monto",
+                      "type" : "string"
+                    },
+                    "montoLetras" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalImpuestoVoucher/montoLetras",
+                      "type" : "string"
+                    },
+                    "limite" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/totalImpuestoVoucher/limite",
+                      "type" : "string"
+                    }
+                  }
+                },
+                "porcentajeImpuesto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/voucher/porcentajeImpuesto",
+                  "type" : "string"
+                }
+              }
+            },
+            "causa" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/causa",
+              "type" : "object",
+              "properties" : {
+                "codCausa" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/causa/codCausa",
+                  "type" : "string"
+                },
+                "descCausa" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/causa/descCausa",
+                  "type" : "string"
+                }
+              }
+            },
+            "subProducto" : {
+              "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto",
+              "type" : "object",
+              "properties" : {
+                "nombreSubProducto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/nombreSubProducto",
+                  "type" : "string"
+                },
+                "producto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/producto",
+                  "type" : "object",
+                  "properties" : {
+                    "nombreProducto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/producto/nombreProducto",
+                      "type" : "string"
+                    },
+                    "identificacionProducto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/producto/identificacionProducto",
+                      "type" : "object",
+                      "properties" : {
+                        "idProducto" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/producto/identificacionProducto/idProducto",
+                          "type" : "string"
+                        },
+                        "idProductoPublico" : {
+                          "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/producto/identificacionProducto/idProductoPublico",
+                          "type" : "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "identificacionSubProducto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/identificacionSubProducto",
+                  "type" : "object",
+                  "properties" : {
+                    "idSubProducto" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/identificacionSubProducto/idSubProducto",
+                      "type" : "string"
+                    },
+                    "idSubProductoPublico" : {
+                      "id" : "http://wso2jsonschema.org/Contrato/siniestro/subProducto/identificacionSubProducto/idSubProductoPublico",
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Vehiculo" : {
+          "id" : "http://wso2jsonschema.org/Contrato/Vehiculo",
+          "type" : "object",
+          "properties" : {
+            "Placa" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Placa",
+              "type" : "string"
+            },
+            "NumeroMotor" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/NumeroMotor",
+              "type" : "string"
+            },
+            "NumeroChasis" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/NumeroChasis",
+              "type" : "string"
+            },
+            "Marca" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Marca",
+              "type" : "string"
+            },
+            "Linea" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Linea",
+              "type" : "string"
+            },
+            "Modelo" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Modelo",
+              "type" : "string"
+            },
+            "Color" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Color",
+              "type" : "string"
+            },
+            "Precio" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Precio",
+              "type" : "string"
+            },
+            "Cilindraje" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Cilindraje",
+              "type" : "string"
+            },
+            "TienePoliza" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/TienePoliza",
+              "type" : "string"
+            },
+            "Servicio" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Servicio",
+              "type" : "string"
+            },
+            "Version" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Version",
+              "type" : "string"
+            },
+            "FasecoldaCode" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/FasecoldaCode",
+              "type" : "string"
+            },
+            "Tipo" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Tipo",
+              "type" : "string"
+            },
+            "Clase" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Clase",
+              "type" : "string"
+            },
+            "FasecoldaMarcaID" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/FasecoldaMarcaID",
+              "type" : "string"
+            },
+            "FasecoldaModeloID" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/FasecoldaModeloID",
+              "type" : "string"
+            },
+            "Monto" : {
+              "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Monto",
+              "type" : "object",
+              "properties" : {
+                "moneda" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Monto/moneda",
+                  "type" : "string"
+                },
+                "monto" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Monto/monto",
+                  "type" : "string"
+                },
+                "montoLetras" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Monto/montoLetras",
+                  "type" : "string"
+                },
+                "limite" : {
+                  "id" : "http://wso2jsonschema.org/Contrato/Vehiculo/Monto/limite",
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "endoso" : {
+          "id" : "http://wso2jsonschema.org/Contrato/endoso",
+          "type" : "object",
+          "properties" : {
+            "Nro_endoso" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/Nro_endoso",
+              "type" : "string"
+            },
+            "Desc_endoso" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/Desc_endoso",
+              "type" : "string"
+            },
+            "AnioEmi" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/AnioEmi",
+              "type" : "string"
+            },
+            "Fec_emi" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/Fec_emi",
+              "type" : "string"
+            },
+            "Fec_vig_desde" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/Fec_vig_desde",
+              "type" : "string"
+            },
+            "Fec_vig_hasta" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/Fec_vig_hasta",
+              "type" : "string"
+            },
+            "Vlr_Aseg_Endoso" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/Vlr_Aseg_Endoso",
+              "type" : "string"
+            },
+            "Vlr_prima_endoso" : {
+              "id" : "http://wso2jsonschema.org/Contrato/endoso/Vlr_prima_endoso",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
