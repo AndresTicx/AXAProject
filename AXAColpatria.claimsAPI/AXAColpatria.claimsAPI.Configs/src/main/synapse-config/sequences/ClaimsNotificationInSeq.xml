@@ -172,9 +172,9 @@
 				    "error": null
 				  },
 				  "body": {
-				    "idEnvio": $1,
+				    "idEnvio": "$1",
 				        "tipoMensaje": "$2",
-				        "data": $3,
+				        "data": "$3",
 				        "Descripcion": "$4"
 				  }
 				}
