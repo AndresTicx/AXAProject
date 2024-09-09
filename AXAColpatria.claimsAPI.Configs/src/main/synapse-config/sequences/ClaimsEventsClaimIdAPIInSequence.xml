@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="ClaimsEventsClaimIdAPIInSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log/>
+    <call>
+        <endpoint key="ClaimsEventsClaimIdAPIEndpoint"/>
+    </call>
+    <log/>
+    <respond/>
+</sequence>

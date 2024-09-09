@@ -1,0 +1,392 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "outputType" : "XML",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "soap:Envelope",
+  "type" : "object",
+  "properties" : {
+    "soap:Body" : {
+      "id" : "http://wso2jsonschema.org/soap:Body",
+      "type" : "object",
+      "properties" : {
+        "ns0:WSCreateSinisterAutos" : {
+          "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos",
+          "type" : "object",
+          "properties" : {
+            "ns0:idProceso" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:idProceso",
+              "type" : "number"
+            },
+            "ns0:branchCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:branchCd",
+              "type" : "number"
+            },
+            "ns0:prefixCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:prefixCd",
+              "type" : "number"
+            },
+            "ns0:documentNum" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:documentNum",
+              "type" : "number"
+            },
+            "ns0:endorsement" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:endorsement",
+              "type" : "number"
+            },
+            "ns0:sinisterId" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:sinisterId",
+              "type" : "number"
+            },
+            "ns0:yearSinister" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:yearSinister",
+              "type" : "number"
+            },
+            "ns0:dateTimeClaim" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:dateTimeClaim",
+              "type" : "string"
+            },
+            "ns0:dateSinister" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:dateSinister",
+              "type" : "string"
+            },
+            "ns0:brandAmount" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:brandAmount",
+              "type" : "number"
+            },
+            "ns0:branchCdClaim" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:branchCdClaim",
+              "type" : "number"
+            },
+            "ns0:documentTypeClaim" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:documentTypeClaim",
+              "type" : "number"
+            },
+            "ns0:documentNumClaim" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:documentNumClaim",
+              "type" : "number"
+            },
+            "ns0:typeVoucher" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:typeVoucher",
+              "type" : "number"
+            },
+            "ns0:userId" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:userId",
+              "type" : "string"
+            },
+            "ns0:typeSinister" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:typeSinister",
+              "type" : "number"
+            },
+            "ns0:sinisterCauseCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:sinisterCauseCd",
+              "type" : "number"
+            },
+            "ns0:deathDate" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:deathDate",
+              "type" : "string"
+            },
+            "ns0:observation" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:observation",
+              "type" : "string"
+            },
+            "ns0:itemCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:itemCd",
+              "type" : "number"
+            },
+            "ns0:documentTypeThird" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:documentTypeThird",
+              "type" : "number"
+            },
+            "ns0:documentNumThird" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:documentNumThird",
+              "type" : "number"
+            },
+            "ns0:currencyCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:currencyCd",
+              "type" : "number"
+            },
+            "ns0:totalLoss" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:totalLoss",
+              "type" : "number"
+            },
+            "ns0:TypeRCE" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:TypeRCE",
+              "type" : "number"
+            },
+            "ns0:descriptionRatherSinister" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:descriptionRatherSinister",
+              "type" : "string"
+            },
+            "ns0:addressRisk" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:addressRisk",
+              "type" : "string"
+            },
+            "ns0:cityCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:cityCd",
+              "type" : "number"
+            },
+            "ns0:stateCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:stateCd",
+              "type" : "number"
+            },
+            "ns0:CountryCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:CountryCd",
+              "type" : "number"
+            },
+            "ns0:isInsured" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:isInsured",
+              "type" : "boolean"
+            },
+            "ns0:limitsRc" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:limitsRc",
+              "type" : "number"
+            },
+            "ns0:technicalPrefixCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:technicalPrefixCd",
+              "type" : "number"
+            },
+            "ns0:formalizationDate" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:formalizationDate",
+              "type" : "string"
+            },
+            "ns0:technicalSubPrefixCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:technicalSubPrefixCd",
+              "type" : "number"
+            },
+            "ns0:coverageCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:coverageCd",
+              "type" : "number"
+            },
+            "ns0:amountPretention" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:amountPretention",
+              "type" : "number"
+            },
+            "ns0:IPSEntryDate" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:IPSEntryDate",
+              "type" : "string"
+            },
+            "ns0:IPSDepartureDate" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:IPSDepartureDate",
+              "type" : "string"
+            },
+            "ns0:estimationCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:estimationCd",
+              "type" : "number"
+            },
+            "ns0:estimationDate" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:estimationDate",
+              "type" : "string"
+            },
+            "ns0:estimationTypeCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:estimationTypeCd",
+              "type" : "number"
+            },
+            "ns0:subEstimationCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:subEstimationCd",
+              "type" : "number"
+            },
+            "ns0:amountEstimation" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:amountEstimation",
+              "type" : "number"
+            },
+            "ns0:statusSinisterCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:statusSinisterCd",
+              "type" : "number"
+            },
+            "ns0:amountLabor" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:amountLabor",
+              "type" : "number"
+            },
+            "ns0:workShopCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:workShopCd",
+              "type" : "number"
+            },
+            "ns0:RegistrationCode" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:RegistrationCode",
+              "type" : "string"
+            },
+            "ns0:plate" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:plate",
+              "type" : "string"
+            },
+            "ns0:Motor" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:Motor",
+              "type" : "string"
+            },
+            "ns0:orderNumber" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:orderNumber",
+              "type" : "number"
+            },
+            "ns0:phoneNumber" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:phoneNumber",
+              "type" : "number"
+            },
+            "ns0:address" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:address",
+              "type" : "string"
+            },
+            "ns0:repairType" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:repairType",
+              "type" : "number"
+            },
+            "ns0:reserveType" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:reserveType",
+              "type" : "number"
+            },
+            "ns0:reserveSubType" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:reserveSubType",
+              "type" : "number"
+            },
+            "ns0:reservePercentage" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:reservePercentage",
+              "type" : "number"
+            },
+            "ns0:amountReserve" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:amountReserve",
+              "type" : "number"
+            },
+            "ns0:joinVehWorkShop" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:joinVehWorkShop",
+              "type" : "string"
+            },
+            "ns0:inspection" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:inspection",
+              "type" : "string"
+            },
+            "ns0:inspectionAllocation" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:inspectionAllocation",
+              "type" : "string"
+            },
+            "ns0:repairOrder" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:repairOrder",
+              "type" : "string"
+            },
+            "ns0:deliveryVehicle" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:deliveryVehicle",
+              "type" : "string"
+            },
+            "ns0:repairDays" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:repairDays",
+              "type" : "number"
+            },
+            "ns0:inter_termi_pt" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:inter_termi_pt",
+              "type" : "string"
+            },
+            "ns0:carta_ofre" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:carta_ofre",
+              "type" : "string"
+            },
+            "ns0:objection" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:objection",
+              "type" : "string"
+            },
+            "ns0:date" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:date",
+              "type" : "string"
+            },
+            "ns0:reprogrammingObs" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:reprogrammingObs",
+              "type" : "string"
+            },
+            "ns0:realDeliveryDate" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:realDeliveryDate",
+              "type" : "string"
+            },
+            "ns0:inspectionObservations" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:inspectionObservations",
+              "type" : "string"
+            },
+            "ns0:ThirdSurName" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:ThirdSurName",
+              "type" : "string"
+            },
+            "ns0:MotherLastName" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:MotherLastName",
+              "type" : "string"
+            },
+            "ns0:NameThird" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:NameThird",
+              "type" : "string"
+            },
+            "ns0:EconomicActivityId" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:EconomicActivityId",
+              "type" : "number"
+            },
+            "ns0:PhoneNumberInsured" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:PhoneNumberInsured",
+              "type" : "number"
+            },
+            "ns0:EmailInsured" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:EmailInsured",
+              "type" : "number"
+            },
+            "ns0:ThirdCountryCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:ThirdCountryCd",
+              "type" : "number"
+            },
+            "ns0:ThirdStateCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:ThirdStateCd",
+              "type" : "number"
+            },
+            "ns0:ThirdCityCd" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:ThirdCityCd",
+              "type" : "number"
+            },
+            "ns0:ThirdAddress" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:ThirdAddress",
+              "type" : "number"
+            },
+            "ns0:PhoneNumber" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:PhoneNumber",
+              "type" : "number"
+            },
+            "ns0:PlateThird" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:PlateThird",
+              "type" : "string"
+            },
+            "ns0:PhoneNumberDriver" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:PhoneNumberDriver",
+              "type" : "string"
+            },
+            "ns0:EmailDriver" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:EmailDriver",
+              "type" : "string"
+            },
+            "ns0:conceptCD" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:conceptCD",
+              "type" : "number"
+            },
+            "ns0:DocumentCD" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:DocumentCD",
+              "type" : "number"
+            },
+            "ns0:plateThirdR" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:plateThirdR",
+              "type" : "string"
+            },
+            "ns0:NameThirdR" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:NameThirdR",
+              "type" : "string"
+            },
+            "ns0:PhoneNumberR" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:PhoneNumberR",
+              "type" : "number"
+            },
+            "ns0:pdfFile" : {
+              "id" : "http://wso2jsonschema.org/soap:Body/ns0:WSCreateSinisterAutos/ns0:pdfFile",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "namespaces" : [ {
+    "prefix" : "soap",
+    "url" : "http://schemas.xmlsoap.org/soap/envelope/"
+  }, {
+    "prefix" : "ns0",
+    "url" : "http://tempuri.org/"
+  } ]
+}
