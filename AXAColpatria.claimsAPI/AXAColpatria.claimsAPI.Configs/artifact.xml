@@ -62,4 +62,7 @@
     <artifact name="ClaimsPagPatchInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/ClaimsPagPatchInSeq.xml</file>
     </artifact>
+    <artifact name="ClaimsNotificationEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsNotificationEndpoint.xml</file>
+    </artifact>
 </artifacts>

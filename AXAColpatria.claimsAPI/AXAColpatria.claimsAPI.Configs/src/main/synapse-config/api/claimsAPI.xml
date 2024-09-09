@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api context="/customerManagement/claimsAPI/v1" name="claimsAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsNotificationInSeq" methods="POST" uri-template="/vehicle/pag/claimsNotification">
+        <outSequence/>
+    </resource>
+    <resource inSequence="ClaimsPagInSeq" methods="POST" uri-template="/vehicle/pag/claims">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+    <resource inSequence="ClaimsPagPatchInSeq" methods="PATCH" uri-template="/vehicle/pag/claims">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
     <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsAPIInSequence" methods="GET" uri-template="/claims/{claimNumber}/{documentType}/{documentNumber}">
         <outSequence/>
     </resource>

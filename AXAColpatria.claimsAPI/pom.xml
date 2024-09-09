@@ -8,10 +8,6 @@
   <packaging>pom</packaging>
   <name>AXAColpatria.claimsAPI</name>
   <description>AXAColpatria.claimsAPI</description>
-  <modules>
-    <module>AXAColpatria.claimsAPI.Configs</module>
-    <module>AXAColpatria.claimsAPI.Composite</module>
-  </modules>
   <scm>
     <connection>scm:git:https://github.com/username/repository.git</connection>
     <developerConnection>scm:git:https://github.com/username/repository.git</developerConnection>
