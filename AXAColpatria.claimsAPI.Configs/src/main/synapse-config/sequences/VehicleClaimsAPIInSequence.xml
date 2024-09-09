@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="VehicleClaimsAPIInSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log/>
+    <propertyGroup description="Grupo de propiedades que tiene los valres de los pathParams de la peticion">
+        <property expression="get-property('uri.var.plate')" name="uri.var.plate" scope="default" type="STRING"/>
+    </propertyGroup>
+    <call>
+        <endpoint key="VehicleClaimsAPIEndpoint"/>
+    </call>
+    <log/>
+    <respond/>
+</sequence>

@@ -1,0 +1,14 @@
+map_S_root_S_Envelope = function(){ 
+var outputsoap_Envelope={};
+
+outputsoap_Envelope =  {};
+outputsoap_Envelope.soap_Body =  {};
+outputsoap_Envelope.soap_Body.ns0_WSCreateSinisterAutos =  {};
+outputsoap_Envelope.soap_Body.ns0_WSCreateSinisterAutos.ns0_idProceso = Number(inputroot.Contrato.siniestro.idProceso);
+outputsoap_Envelope.soap_Body.ns0_WSCreateSinisterAutos.ns0_branchCd = Number(inputroot.Contrato.idSucursal);
+return outputsoap_Envelope;
+};
+
+
+
+
