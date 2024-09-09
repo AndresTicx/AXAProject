@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="ClaimsNotificationEndpoint" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="post" uri-template="https://4817fd01-8928-4d64-a020-07d46a944205.mock.pstmn.io/success">
+        <suspendOnFailure>
+            <initialDuration>-1</initialDuration>
+            <progressionFactor>1.0</progressionFactor>
+        </suspendOnFailure>
+        <markForSuspension>
+            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+        </markForSuspension>
+    </http>
+</endpoint>
