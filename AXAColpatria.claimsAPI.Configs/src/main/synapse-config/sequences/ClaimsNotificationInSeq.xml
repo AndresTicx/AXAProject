@@ -1,2 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sequence name="ClaimsNotificationInSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse"/>
+<sequence name="ClaimsNotificationInSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log description="Log Notificar SiniestroReq" level="full"/>
+    <payloadFactory description="Map JSON req to XML" media-type="xml">
+        <format>
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://AXAColpatria.Entidad.GestionSiniestros.Subocol.Esquemas/ActualizarAnuncioReq/V1.0">
+                <soapenv:Header/>
+                <soapenv:Body>
+                    <v1:ActualizarAnuncioReq>
+                        <Body xmlns="">
+                            <Documento>
+                                <Contenido>
+                                    <tns:aviso xmlns:tns="http://www.subocol.com/AvisoSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.subocol.com/AvisoSchema AvisoSchema.xsd ">
+                                        <tns:idEnvio>$1</tns:idEnvio>
+                                        <tns:operacion>$2</tns:operacion>
+                                        <tns:codigoCliente>$3</tns:codigoCliente>
+                                        <tns:codigoSucursalCliente>$4</tns:codigoSucursalCliente>
+                                        <tns:numeroSiniestro>$5</tns:numeroSiniestro>
+                                        <tns:numeroInspeccion>$6</tns:numeroInspeccion>
+                                        <tns:eventoSubocol>$7</tns:eventoSubocol>
+                                        <tns:idProducto>$8</tns:idProducto>
+                                        <tns:polizaContrato>$9</tns:polizaContrato>
+                                        <tns:fechaVencimientoPoliza>$10</tns:fechaVencimientoPoliza>
+                                        <tns:fechaReclamacion>$11</tns:fechaReclamacion>
+                                        <tns:fechaEvento>$12</tns:fechaEvento>
+                                        <tns:fechaProgramadaEntrada>$13</tns:fechaProgramadaEntrada>
+                                        <tns:fechaEntrada>$14</tns:fechaEntrada>
+                                        <tns:fechaProgramadaSalida>$15</tns:fechaProgramadaSalida>
+                                        <tns:fechaSalida>$16</tns:fechaSalida>
+                                        <tns:ciudadEvento>$17</tns:ciudadEvento>
+                                        <tns:ciudadAtencion>$18</tns:ciudadAtencion>
+                                        <tns:sucursalTaller>$19</tns:sucursalTaller>
+                                        <tns:contactoTaller>$20</tns:contactoTaller>
+                                        <tns:idEvaluador>$21</tns:idEvaluador>
+                                        <tns:nombreEvaluador>$22</tns:nombreEvaluador>
+                                        <tns:placa>$23</tns:placa>
+                                        <tns:vin>$24</tns:vin>
+                                        <tns:descripcionVehiculo>$25</tns:descripcionVehiculo>
+                                        <tns:codigoVehiculo>$26</tns:codigoVehiculo>
+                                        <tns:modelo>$27</tns:modelo>
+                                        <tns:codMarca>$28</tns:codMarca>
+                                        <tns:numeroChasis>$29</tns:numeroChasis>
+                                        <tns:numeroMotor>$30</tns:numeroMotor>
+                                        <tns:tiposervicio>$31</tns:tiposervicio>
+                                        <tns:kilometraje>$32</tns:kilometraje>
+                                        <tns:codigoPintura>$33</tns:codigoPintura>
+                                        <tns:color>$34</tns:color>
+                                        <tns:codPropietario>$35</tns:codPropietario>
+                                        <tns:nomPropietario>$36</tns:nomPropietario>
+                                        <tns:direccionPropietario>$37</tns:direccionPropietario>
+                                        <tns:tipoDireccionPropietario>$38</tns:tipoDireccionPropietario>
+                                        <tns:telefonoPropietario>$39</tns:telefonoPropietario>
+                                        <tns:tipoTelefonoPropietario>$40</tns:tipoTelefonoPropietario>
+                                        <tns:emailPropietario>$41</tns:emailPropietario>
+                                        <tns:cobertura>$42</tns:cobertura>
+                                        <tns:valorAsegurado>$43</tns:valorAsegurado>
+                                        <tns:montoMaxReparacion>$44</tns:montoMaxReparacion>
+                                        <tns:deducibleValor>$45</tns:deducibleValor>
+                                        <tns:deduciblePct>$46</tns:deduciblePct>
+                                        <tns:numSalariosDeduc>$47</tns:numSalariosDeduc>
+                                        <tns:tipoSalario>$48</tns:tipoSalario>
+                                        <tns:porcentajePenalizacion>$49</tns:porcentajePenalizacion>
+                                        <tns:tipoColision>$50</tns:tipoColision>
+                                        <tns:ubicacionGolpe>$51</tns:ubicacionGolpe>
+                                        <tns:observaciones>$52</tns:observaciones>
+                                        <tns:usuario>$53</tns:usuario>
+                                        <tns:flagSoloCotizacion>$54</tns:flagSoloCotizacion>
+                                        <tns:estado>$55</tns:estado>
+                                        <tns:placaTercero>$56</tns:placaTercero>
+                                        <tns:celulConductor>$57</tns:celulConductor>
+                                        <tns:emailConductor>$58</tns:emailConductor>
+                                        <tns:TipoRc>$59</tns:TipoRc>
+                                    </tns:aviso>
+                                </Contenido>
+                            </Documento>
+                        </Body>
+                    </v1:ActualizarAnuncioReq>
+                </soapenv:Body>
+            </soapenv:Envelope>
+        </format>
+        <args>
+            <arg evaluator="json" expression="$.Documento.Contenido.idEnvio"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.operacion"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.codigoCliente"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.codigoSucursalCliente"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.numeroSiniestro"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.numeroInspeccion"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.eventoSubocol"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.idProducto"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.polizaContrato"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.fechaVencimientoPoliza"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.fechaReclamacion"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.fechaEvento"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.fechaProgramadaEntrada"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.fechaEntrada"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.fechaProgramadaSalida"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.fechaSalida"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.ciudadEvento"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.ciudadAtencion"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.sucursalTaller"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.contactoTaller"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.idEvaluador"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.nombreEvaluador"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.placa"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.vin"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.descripcionVehiculo"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.codigoVehiculo"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.modelo"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.codMarca"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.numeroChasis"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.numeroMotor"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.tiposervicio"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.kilometraje"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.codigoPintura"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.color"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.codPropietario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.nomPropietario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.direccionPropietario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.tipoDireccionPropietario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.telefonoPropietario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.tipoTelefonoPropietario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.emailPropietario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.cobertura"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.valorAsegurado"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.montoMaxReparacion"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.deducibleValor"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.deduciblePct"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.numSalariosDeduc"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.tipoSalario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.porcentajePenalizacion"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.tipoColision"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.ubicacionGolpe"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.observaciones"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.usuario"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.flagSoloCotizacion"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.estado"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.placaTercero"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.celulConductor"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.emailConductor"/>
+            <arg evaluator="json" expression="$.Documento.Contenido.TipoRc"/>
+        </args>
+    </payloadFactory>
+    <property description="Encoding payload" expression="fn:base64Encode($body//tns:aviso)" name="bodyPayload" scope="default" type="STRING" xmlns:tns="http://www.subocol.com/AvisoSchema"/>
+    <payloadFactory description="Map Encoded Req" media-type="xml">
+        <format>
+            <ns0:actualizarAnuncio xmlns:ns0="http://desarrollos.cesvicolombia.com/">
+                <ns0:arg0>$1</ns0:arg0>
+            </ns0:actualizarAnuncio>
+        </format>
+        <args>
+            <arg evaluator="xml" expression="get-property('bodyPayload')"/>
+        </args>
+    </payloadFactory>
+    <call>
+        <endpoint key="ClaimsNotificationEndpoint"/>
+    </call>
+    <propertyGroup description="Backend Response values">
+        <property expression="//*[local-name()='idEnvio']/text()" name="idEnvio" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='tipoMensaje']/text()" name="tipoMensaje" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='data']/text()" name="data" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='Descripcion']/text()" name="Descripcion" scope="default" type="STRING"/>
+    </propertyGroup>
+    <log description="Value Prop Descripcion" level="custom">
+        <property expression="get-property('Descripcion')" name="LogCheck"/>
+    </log>
+    <filter regex="Exito" source="get-property('Descripcion')">
+        <then>
+            <log level="full" separator="[***antes de  RespExito payload**]"/>
+            <payloadFactory description="Construct Exito Resp" media-type="json">
+                <format>{
+				  "MsgRsHdr": {
+				    "error": null
+				  },
+				  "body": {
+				    "idEnvio": "$1",
+				        "tipoMensaje": "$2",
+				        "data": "$3",
+				        "Descripcion": "$4"
+				  }
+				}
+				</format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('idEnvio')"/>
+                    <arg evaluator="xml" expression="get-property('tipoMensaje')"/>
+                    <arg evaluator="xml" expression="get-property('data')"/>
+                    <arg evaluator="xml" expression="get-property('Descripcion')"/>
+                </args>
+            </payloadFactory>
+        </then>
+        <else>
+            <log level="full" separator="[***antes de sequenceFault payload**]"/>
+            <payloadFactory description="Construct Error Resp" media-type="json">
+                <format>{
+                        "MsgRsHdr": {
+                            "error": {
+                                "Status": {
+                                    "StatusCode":$1,
+                                    "Severity": null,
+                                    "AdditionalStatus": {
+                                        "Category": "Error Negocio",
+                                        "StatusDesc": "La consulta no esta disponible por el momento, por favor intente más tarde"
+                                    }
+                                }
+                           }
+                        },
+                        "body": null
+                    }</format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('axis2','HTTP_SC')"/>
+                </args>
+            </payloadFactory>
+        </else>
+    </filter>
+    <property description="Resp Status Code" name="HTTP_SC" scope="axis2" type="STRING" value="200"/>
+    <property description="JSON format" name="messageType" scope="axis2" type="STRING" value="application/json"/>
+    <respond/>
+</sequence>
