@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="ClaimsPagPatchInSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full" separator="[StartInSeq]"/>
+    <datamapper config="gov:datamapper/ModificarSiniestrosAutosReq_To_WSModifSinisterAutos.dmc" inputSchema="gov:datamapper/ModificarSiniestrosAutosReq_To_WSModifSinisterAutos_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/ModificarSiniestrosAutosReq_To_WSModifSinisterAutos_outputSchema.json" outputType="XML" xsltStyleSheet="gov:datamapper/ModificarSiniestrosAutosReq_To_WSModifSinisterAutos_xsltStyleSheet.xml"/>
+    <header action="remove" name="Action" scope="default"/>
+    <property action="remove" name="SOAPAction" scope="transport"/>
+    <header name="Action" scope="default" value="ModificarSiniestroAuto"/>
+    <call>
+        <endpoint key="ClaimsPagPatchEndpoint"/>
+    </call>
+    <log level="full" separator="[SalidaBackend]"/>
+    <propertyGroup>
+        <property expression="//*[local-name()='BrachCd']/text()" name="BrachCd" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='PrefixCd']/text()" name="PrefixCd" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='DocumentNum']/text()" name="DocumentNum" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='Endorsement']/text()" name="Endorsement" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='SinisterId']/text()" name="SinisterId" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='ClientCD']/text()" name="ClientCD" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='SubEstimationYN']/text()" name="SubEstimationYN" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='Message']/text()" name="Message" scope="default" type="STRING"/>
+        <property expression="//*[local-name()='Error']/text()" name="Error" scope="default" type="STRING"/>
+    </propertyGroup>
+    <log level="full"/>
+    <filter regex="0" source="$ctx:Error">
+        <then>
+            <log level="full" separator="[***antes de Exito payload**]"/>
+            <payloadFactory description="Construct Exito Resp" media-type="json">
+                <format>
+				            {
+				                "MsgRsHdr": {
+				                    "error": null
+				                },
+				                "body": {
+				                    "BrachCd": "$1",
+				                    "PrefixCd": "$2",
+				                    "DocumentNum": "$3",
+				                    "Endorsement": "$4",
+				                    "SinisterId": "$5",
+				                    "ClientCD": "$6",
+				                    "SubEstimationYN": "$7",
+				                    "Message": "$8",
+				                    "Error": "$9"
+				                }
+				            }
+	            </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('BrachCd')"/>
+                    <arg evaluator="xml" expression="get-property('PrefixCd')"/>
+                    <arg evaluator="xml" expression="get-property('DocumentNum')"/>
+                    <arg evaluator="xml" expression="get-property('Endorsement')"/>
+                    <arg evaluator="xml" expression="get-property('SinisterId')"/>
+                    <arg evaluator="xml" expression="get-property('ClientCD')"/>
+                    <arg evaluator="xml" expression="get-property('SubEstimationYN')"/>
+                    <arg evaluator="xml" expression="get-property('Message')"/>
+                    <arg evaluator="xml" expression="get-property('Error')"/>
+                </args>
+            </payloadFactory>
+        </then>
+        <else>
+            <log level="full" separator="[***antes de sequenceFault payload**]"/>
+            <payloadFactory description="Construct Error Resp" media-type="json">
+                <format>{
+	                "MsgRsHdr": {
+	                    "error": {
+	                        "Status": {
+	                            "StatusCode": $1,
+	                            "Severity": null,
+	                            "AdditionalStatus": {
+	                                "Category": "Error Negocio",
+	                                "StatusDesc": "$2"
+	                            }
+	                        }
+	                    }
+	                },
+	                "body": null
+	            }</format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('axis2','HTTP_SC')"/>
+                    <arg evaluator="xml" expression="get-property('Error')"/>
+                </args>
+            </payloadFactory>
+        </else>
+    </filter>
+    <log/>
+    <respond/>
+</sequence>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="claimsAPI" groupId="com.axa.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/claimsAPI.xml</file>
+    </artifact>
+    <artifact name="claimsAPI_swagger" groupId="com.axa.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/claimsAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="claimsAPI_metadata" groupId="com.axa.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/claimsAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="ClaimsAPIEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsAPIEndpoint.xml</file>
+    </artifact>
+    <artifact name="VehicleClaimsAPIEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/VehicleClaimsAPIEndpoint.xml</file>
+    </artifact>
+    <artifact name="ClaimsCreateAPIEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsCreateAPIEndpoint.xml</file>
+    </artifact>
+    <artifact name="ClaimsAPIInSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsAPIInSequence.xml</file>
+    </artifact>
+    <artifact name="ClaimsCreateAPIInSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsCreateAPIInSequence.xml</file>
+    </artifact>
+    <artifact name="VehicleClaimsAPIInSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/VehicleClaimsAPIInSequence.xml</file>
+    </artifact>
+    <artifact name="claimsAPIFaultSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/claimsAPIFaultSequence.xml</file>
+    </artifact>
+    <artifact name="ClaimsUpdateWebhookAPIInSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsUpdateWebhookAPIInSequence.xml</file>
+    </artifact>
+    <artifact name="ClaimsUpdateWebhookAPIEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsUpdateWebhookAPIEndpoint.xml</file>
+    </artifact>
+    <artifact name="ClaimsEventsClaimIdAPIEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsEventsClaimIdAPIEndpoint.xml</file>
+    </artifact>
+    <artifact name="ClaimsEventsClaimIdAPIInSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsEventsClaimIdAPIInSequence.xml</file>
+    </artifact>
+    <artifact name="ClaimsEventsAPIEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsEventsAPIEndpoint.xml</file>
+    </artifact>
+    <artifact name="ClaimsEventsAPIInSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsEventsAPIInSequence.xml</file>
+    </artifact>
+    <artifact name="ClaimsEventsClaimIdAPIFaultSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsEventsClaimIdAPIFaultSequence.xml</file>
+    </artifact>
+    <artifact name="ClaimsEventsAPIFaultSequence" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsEventsAPIFaultSequence.xml</file>
+    </artifact>
+    <artifact name="ArlClaimsMiEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ArlClaimsMiEndpoint.xml</file>
+    </artifact>
+    <artifact name="ArlClaimsFaultSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ArlClaimsFaultSeq.xml</file>
+    </artifact>
+    <artifact name="ArlClaimsInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ArlClaimsInSeq.xml</file>
+    </artifact>
+    <artifact name="ClaimsNotificationInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsNotificationInSeq.xml</file>
+    </artifact>
+    <artifact name="ClaimsPagInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsPagInSeq.xml</file>
+    </artifact>
+    <artifact name="ClaimsPagPatchInSeq" groupId="com.axa.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ClaimsPagPatchInSeq.xml</file>
+    </artifact>
+    <artifact name="ClaimsNotificationEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsNotificationEndpoint.xml</file>
+    </artifact>
+    <artifact name="ClaimsPagEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsPagEndpoint.xml</file>
+    </artifact>
+    <artifact name="ClaimsPagPatchEndpoint" groupId="com.axa.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClaimsPagPatchEndpoint.xml</file>
+    </artifact>
+</artifacts>

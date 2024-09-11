@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/customerManagement/claimsAPI/v1" name="claimsAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsNotificationInSeq" methods="POST" uri-template="/vehicle/pag/claimsNotification">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsPagInSeq" methods="POST" uri-template="/vehicle/pag/claims">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsPagPatchInSeq" methods="PATCH" uri-template="/vehicle/pag/claims">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsAPIInSequence" methods="GET" uri-template="/claims/{claimNumber}/{documentType}/{documentNumber}">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="VehicleClaimsAPIInSequence" methods="GET" uri-template="/vehicle/claims/{plate}">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsCreateAPIInSequence" methods="POST" url-mapping="/claims/create">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="claimsAPIFaultSequence" inSequence="ClaimsUpdateWebhookAPIInSequence" methods="POST" url-mapping="/claims/update/webhook">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="ClaimsEventsClaimIdAPIFaultSequence" inSequence="ClaimsEventsClaimIdAPIInSequence" methods="GET" uri-template="/claims/events/{claimId}">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="ClaimsEventsAPIFaultSequence" inSequence="ClaimsEventsAPIInSequence" methods="POST" uri-template="/claims/events">
+        <outSequence/>
+    </resource>
+    <resource faultSequence="ArlClaimsFaultSeq" inSequence="ArlClaimsInSeq" methods="GET" uri-template="/arl/claims/{documentId}/{documentType}">
+        <outSequence/>
+    </resource>
+</api>
